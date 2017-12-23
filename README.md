@@ -7,18 +7,17 @@ Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej prze
     tak, aby tworzyły poniższe drzewo:
     
         ~/workspace/ros/aerostack_catkin_ws/src/
-    	      -aerostack_stack
-    	    	-behavior_take_off2
-    		    	-CMakeLists.txt
-    		    	-package.xml
-    		    	-launch
-    			    	-behavior_take_off2.launch
+            -behavior_take_off2
+                -CMakeLists.txt
+                -package.xml
+                -launch
+                    -behavior_take_off2.launch
     			-src
-    					-include
-    						-behavior_take_off2.h
-    					-source
-	    					-behavior_take_off2.cpp
-    						-behavior_take_off2_main.cpp
+                    -include
+                        -behavior_take_off2.h
+                    -source
+                        -behavior_take_off2.cpp
+                        -behavior_take_off2_main.cpp
 
 2. Przeprowadzić kompilację catkin `~/workspace/ros/aerostack_catkin_ws/$ catkin_make`
 3. Edytować plik `simulated_quadrotor_basic.sh` - W skrypcie uruchamiającym należy dokleić na końcu poniższe linie:
@@ -46,6 +45,8 @@ Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej prze
 
 ### Przyjmowane argumenty ###
 Behavior przyjmuje argumenty:
-`altitude = x` //wysokość w metrach na jaką dron ma się wznieść. 0.7<x<5
+    
+    altitude = x` //wysokość w metrach na jaką dron ma się wznieść. 0.7<x<5
+    
 Przykład wywołania:
 `result = api.executeBehavior('TAKE_OFF2', altitude=1.2)`
