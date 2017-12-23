@@ -26,9 +26,9 @@ tak, aby tworzyły poniższe drzewo:
 3. Edytować plik simulated_quadrotor_basic.sh
 	W skrypcie uruchamiającym należy dokleić na końcu poniższe linie:
 
-`#---------------------------------------------------------------------------------------------` \
-`# Behavior TakeOff2                                                                           ` \
-`#---------------------------------------------------------------------------------------------` \
+`#---------------------------------------------------------------------------------------` \
+`# Behavior TakeOff2                                                                     ` \
+`#---------------------------------------------------------------------------------------` \
 --tab --title "Behavior TakeOff2" --command "bash -c \"
 roslaunch behavior_take_off2 behavior_take_off2.launch --wait \
     drone_id_namespace:=drone$NUMID_DRONE \
