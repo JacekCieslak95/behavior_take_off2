@@ -27,7 +27,9 @@ tak, aby tworzyły poniższe drzewo:
 	W skrypcie uruchamiającym należy dokleić na końcu poniższe linie:
 
 `#---------------------------------------------------------------------------------------` \
+
 `# Behavior TakeOff2                                                                     ` \
+
 `#---------------------------------------------------------------------------------------` \
 --tab --title "Behavior TakeOff2" --command "bash -c \"
 roslaunch behavior_take_off2 behavior_take_off2.launch --wait \
