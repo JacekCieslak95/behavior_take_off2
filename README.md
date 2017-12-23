@@ -5,7 +5,7 @@ Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej prze
 1. Pliki niniejszego repozytorium należy umieścić w folderze 
     `~/workspace/ros/aerostack_catkin_ws/src/`
     tak, aby tworzyły poniższe drzewo:
-
+    ```
     ~/workspace/ros/aerostack_catkin_ws/src/
     	  -aerostack_stack
     		-behavior_take_off2
@@ -19,6 +19,7 @@ Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej prze
     				-source
     					-behavior_take_off2.cpp
     					-behavior_take_off2_main.cpp
+    ```
 2. Przeprowadzić kompilację catkin `~/workspace/ros/aerostack_catkin_ws/$ catkin_make`
 3. Edytować plik `simulated_quadrotor_basic.sh` - W skrypcie uruchamiającym należy dokleić na końcu poniższe linie:
     ```bash
