@@ -32,9 +32,10 @@ Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej prze
     		my_stack_directory:=${AEROSTACK_STACK};
     	exec bash\"" \
     
-4. Edytować plik `behavior_catalog.yaml`. Plik znajduje się w lokalizacji: `~/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/configs/drone1` 
+4. Edytować plik `behavior_catalog.yaml`. Plik znajduje się w lokalizacji: `~/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/configs/droneX` 
     W sekcji `behavior_descriptors` należy dokleić poniższe linie:
-	    
+#### UWAGA! Należy to wkleić do folderu `configs/droneX` każdego drona, którego chcemy uruchamiać z danym zachowaniem.
+#### Np. Używając tego w dronach 1 i 2 poniższy fragment należy dokleić do `behavior_catalog.yaml` w folderach `configs/drone1` oraz `configs/drone2`	    
 		- behavior: TAKE_OFF2
 				timeout: 30
 				incompatible_lists: [motion_behaviors]
