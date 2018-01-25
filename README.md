@@ -1,4 +1,4 @@
-# TakeOff2
+# Behavior BehaviorTakeOff2
 Paczka tworzy behavior używany przez Aerostack (oprogramowanie grupy Vision4UAV: https://github.com/Vision4UAV/Aerostack)
 Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej przez użytkownika (co najmniej 0.7m)
 ### Instalacja ###
