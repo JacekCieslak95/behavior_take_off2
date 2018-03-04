@@ -11,6 +11,7 @@
 #include <geometry_msgs/Vector3Stamped.h>
 #include <yaml-cpp/yaml.h>
 #include <droneMsgsROS/dronePositionRefCommandStamped.h>
+#include <droneMsgsROS/dronePositionTrajectoryRefCommand.h>
 #include <droneMsgsROS/droneYawRefCommand.h>
 #include <droneMsgsROS/droneTrajectoryControllerControlMode.h>
 #include <droneMsgsROS/setControlMode.h>
@@ -24,6 +25,7 @@
 #include <droneMsgsROS/dronePitchRollCmd.h>
 #include <droneMsgsROS/droneDAltitudeCmd.h>
 #include <droneMsgsROS/droneDYawCmd.h>
+
 
 //Aerostack libraries
 #include <behavior_process.h>
@@ -54,8 +56,11 @@ private:
   std::string yaw_controller_str;
   std::string service_topic_str;
   std::string drone_position_str;
+  std::string mission_point_str;
   std::string speed_topic;
   std::string d_altitude_str;
+  std::string trajectory_ref_command_str;
+
 
   //Subscriber---
   ros::Subscriber estimated_pose_sub;
@@ -66,6 +71,8 @@ private:
   ros::Publisher drone_position_pub;
   ros::Publisher  speed_topic_pub;
   ros::Publisher  d_altitude_pub;
+  ros::Publisher  mission_point_pub;
+  ros::Publisher reference_trajectory_pub;
   ros::ServiceClient mode_service;
   ros::ServiceClient initialize_yaw_cli;
   ros::ServiceClient query_client;
