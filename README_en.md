@@ -43,6 +43,7 @@ Behavior TakeOff2 make a UAV take off and hover at a given altitude (at least 0.
 		- behavior: TAKE_OFF2
 				timeout: 30
 				incompatible_lists: [motion_behaviors]
+				capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
 				arguments:
 				  - argument: ALTITUDE
 					allowed_values: [0.7,5]

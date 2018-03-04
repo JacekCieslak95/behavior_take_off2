@@ -43,6 +43,7 @@ Behavior TakeOff2 powoduje, że UAV startuje i zawisa na wysokości podanej prze
 		- behavior: TAKE_OFF2
 				timeout: 30
 				incompatible_lists: [motion_behaviors]
+				capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
 				arguments:
 				  - argument: ALTITUDE
 					allowed_values: [0.7,5]
